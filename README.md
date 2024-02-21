@@ -3,10 +3,9 @@
 - 🌱 I’m currently learning DSA(Java) and ML with python
 
 
-## 🌐 Socials:
+## 🌐 Connect with me:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kanak-tanwar-15082024b) 
-## 📧 Email:
-[![Email](https://img.shields.io/badge/Email-%23D14836.svg?logo=gmail&logoColor=white)](mailto:your-kanaktanwarpro@gmail.com)
+[![Email](https://img.shields.io/badge/Email-%23D14836.svg?logo=gmail&logoColor=white)](mailto:kanaktanwarpro@gmail.com)
 
 
 # 💻 Tech Stack:
