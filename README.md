@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @kanakOS01
 - 👀 I’m interested in Tech and stuff
 - 🌱 I do AI, backend and some CLI apps
-- 🌐 kanaktanwar.tech
+- 🌐 [kanaktanwar.tech](https://kanaktanwarpro.tech)
 
 
 ## 🌐 Connect with me:
