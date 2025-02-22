@@ -1,0 +1,149 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{cfr-lm}
+\usepackage{lipsum}
+\usepackage{marvosym}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+
+% Adjust the width of vertical lines in the table
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\renewcommand\tabularxcolumn[1]{m{#1}}
+
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\normalfont\bfseries}
+{}
+{0em}
+{}[\vspace{-0.6em}] % Adjust the spacing here
+
+\begin{document}
+\pagestyle{empty} % Removes page numbers
+
+\vspace{-10mm}
+\begin{center}
+    {\Huge\scshape Kanak Tanwar}
+    
+    \vspace{0.01em}
+    \faGlobe\ \href{https://kanaktanwar.tech}{kanaktanwar.tech} $\vert$
+    \faGithub\ \href{https://github.com/kanakOS01}{github.com/kanakOS01} $\vert$
+    
+    \faEnvelope\ \href{mailto:kanaktanwarpro@gmail.com}{kanaktanwarpro@gmail.com} $\vert$
+    \faLinkedin\ \href{https://www.linkedin.com/in/kanak-tanwar/}{linkedin.com/in/kanak-tanwar}
+\end{center} 
+\vspace{-5mm}
+
+\section{Education}
+\vspace{-2mm}
+    \setlength{\tabcolsep}{2pt} % Adjust the spacing between columns in the table
+    \small\begin{tabularx}{\textwidth}{|c|Y|c|c|}
+      \hline
+      \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Graduation Date}\\
+      \hline
+      B.Tech - CSE & Dronacharya College Of Engineering & 86\% & Ongoing\\
+      \hline
+      Senior Secondary & Manav Rachna International School & 96.0\% & May 2022 \\
+      \hline
+      Secondary & Manav Rachna International School & 97.6\% & May 2020 \\
+      \hline
+    \end{tabularx}
+\vspace{-5mm}
+
+\section*{Experience}
+\vspace{-2mm}
+\subsection{AI Intern | Mentorpal.ai 
+\hfill June 2024 to July 2024}
+\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+    \item Engineered an extension to suggest personalized messages to prospective leads on LinkedIn.
+    \item Developed an internal tool to allow QA with various resume using LangChain and LLM improving efficiency of the team.
+    \item Scraped various websites using Selenium and BeautifulSoup to provide client leads.
+    \item Collaborated with a team of professionals to design, develop, and implement innovative solutions driving the company’s growth.
+\end{itemize}
+\vspace{-5mm}
+
+\section*{Projects}
+\vspace{-2mm}
+\subsection*{\href{https://github.com/kanakOS01/git-chat}{Git Chat}}
+\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+    \item Developed a RAG-based application enabling Q/A interactions with GitHub repositories.
+    \item Utilized Weaviate vector database and LangChain for efficient data management and processing and built a user-friendly UI on Streamlit to facilitate seamless user interaction.
+    \item Implemented functionality to automatically load new repositories when encountered, ensuring up-to-date data access.
+\end{itemize}
+\vspace{-3mm}
+
+\subsection*{\href{https://github.com/kanakOS01/social-media-fastapi}{Social Media API}}
+\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+    \item Programmed a robust API using FastAPI for CRUD operations, authentication, and schema validation.
+    \item Integrated PostgreSQL with SQLAlchemy for seamless database management and utilized Alembic for migrations.
+    \item Deployed the API to an Ubuntu machine on DigitalOcean, configured a domain name, and implemented an SSL certificate for secure access.
+    \item Implemented a CI/CD pipeline using GitHub Actions for streamlined deployment and updates.
+\end{itemize}
+\vspace{-3mm}
+
+\subsection*{\href{https://github.com/kanakOS01/movie-recommender-system}{Movie Recommendation System}}
+\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+    \item Cleaned and transformed TMDB dataset from Kaggle with about 5000 data points.
+    \item Utilized text processing techniques such as converting text to vectors using bag-of-words model and text vectorization to improve performance. 
+    \item Built and fine-tuned a content-based recommendation system using sklearn to recommend movies similar to the input.
+\end{itemize}
+\vspace{-3mm}
+
+\subsection*{\href{https://github.com/kanakOS01/house-prediction-model}{House Price Prediction Project}}
+\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+    \item Processed a Bangalore housing dataset comprising more than 13,000 data points.
+    \item Engineered a linear regression model using scikit-learn to predict house prices based on the Bangalore House Price Data from Kaggle, achieving an 85\% accuracy rate.
+    \item Designed a user-friendly website using HTML, CSS, JS, Flask and deployed the website on an AWS EC2 instance using NGINX reverse proxy.
+\end{itemize}
+\vspace{-5mm}
+
+\section*{Skills}
+\vspace{-2mm}
+\begin{itemize}
+    \item \textbf{Programming Languages -} \small Python, Java, C/C++, JavaScript, R, Bash
+    \vspace{-2mm}
+    \item \textbf{Web Development -} \small HTML, CSS, JS, Bootstrap, Flask, FastAPI
+    \vspace{-2mm}
+    \item \textbf{Data Science and Machine Learning -} \small NumPy, Pandas, Matplotlib, Scikit Learn, LangChain
+    \vspace{-2mm}
+    \item \textbf{Database and ORM -} \small MySQL, MongoDB, PostgreSQL, SQLAlechemy
+    \vspace{-2mm}
+    \item \textbf{Misc -} \small Git, Linux, AWS, Streamlit, Docker, BeautifulSoup, Selenium
+    \vspace{-2mm}
+\end{itemize}
+\vspace{-5mm}
+
+\section*{Achievements}
+\vspace{-2mm}
+\begin{itemize}[label=\textbullet, left=0pt, itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+    \item Regionalist at ICPC Amritapuri, 2023.
+    \item AIML track prize winner in HackKRMU 3.0 (WanderAI Project).
+    \item Third Prize Winner in the Tech Race contest by Gurugram University.
+    \item Ranked 8th in India in NCAT 2023.
+\end{itemize}
+\vspace{-5mm}
+
+\section*{Key Courses}
+\vspace{-2mm}
+\begin{itemize}[label=\textbullet, left=0pt, itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+    \item Database Management with SQL, AIML fundamentals, Advanced Data Structures, Object Oriented Programming, Operating Systems
+    \item Mathematics: Linear Algebra, Probability \& Statistics, Basic Calculus
+\end{itemize}
+\vspace{-3mm}
+
+\end{document}
