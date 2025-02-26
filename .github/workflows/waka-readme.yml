@@ -1,21 +1,32 @@
-name: WakaTime on Readme
+name: Waka Readme
+
 permissions:
   contents: write
+
 on:
+  # for manual workflow trigger
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *" 
+    # runs at 12 AM UTC (5:30 AM IST)
+    - cron: "0 12 * * *"
+
 jobs:
   update-readme:
     name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
-      - name: Update Readme with WakaTime Stats
-        uses: athul/waka-readme@master
+      - uses: athul/waka-readme@master # do NOT replace with anything else
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          REPOSITORY: kanakOS01/kanakOS01
+          SHOW_TITLE: true
+          SECTION_NAME: waka
           BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
+          CODE_LANG: python
           TIME_RANGE: all_time
           SHOW_TIME: true
           SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
+          COMMIT_MESSAGE: Updated waka-readme graph with new metrics
+          TARGET_BRANCH: main
+          TARGET_PATH: README.md
+          
