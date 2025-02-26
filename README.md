@@ -17,8 +17,10 @@
 <br/>
 <!--START_SECTION:waka-->
 
-```txt
-Total Time: 11 hrs 19 mins
+```python
+From: 21 February 2025 - To: 25 February 2025
+
+Total Time: 10 hrs 59 mins
 
 Python       9 hrs 22 mins   ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣀⣀⣀⣀   82.86 %
 TOML         38 mins         ⣿⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   05.73 %
