@@ -23,7 +23,7 @@ jobs:
           SECTION_NAME: waka
           BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
           CODE_LANG: python
-          # TIME_RANGE: all_time
+          TIME_RANGE: all_time
           SHOW_TIME: true
           SHOW_TOTAL: true
           COMMIT_MESSAGE: Updated waka-readme graph with new metrics
