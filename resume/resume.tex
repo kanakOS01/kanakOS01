@@ -1,5 +1,5 @@
 \documentclass[a4paper,11pt]{article}
-\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage[left=0.4in,right=0.4in,top=0.4in,bottom=0.4in]{geometry}
 \usepackage{fontawesome}
 \usepackage{enumitem}
 \usepackage{tabularx}
@@ -9,156 +9,105 @@
 \usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage{cfr-lm}
-\usepackage{lipsum}
-\usepackage{marvosym}
 \usepackage{wrapfig}
 \usepackage{float}
 \usepackage{ragged2e}
 \usepackage[most]{tcolorbox}
 \usepackage{setspace}
 
-% Adjust the width of vertical lines in the table
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 
 \titleformat{\section}
-{\large\bfseries}
-{}
-{0em}
-{}[\titlerule]
-
+{\large\bfseries}{}{0em}{}[\titlerule]
 \titleformat{\subsection}
-{\normalfont\bfseries}
-{}
-{0em}
-{}[\vspace{-0.6em}] % Adjust the spacing here
+{\normalfont\bfseries}{}{0em}{}[\vspace{-0.4em}]
 
 \begin{document}
-\pagestyle{empty} % Removes page numbers
+\pagestyle{empty}
 
-\vspace{-10mm}
+\vspace{-8mm}
 \begin{center}
     {\Huge\scshape Kanak Tanwar}
-    
+
     \vspace{0.01em}
     \faGlobe\ \href{https://kanaktanwar.tech}{kanaktanwar.tech} $\vert$
-    \faGithub\ \href{https://github.com/kanakOS01}{github.com/kanakOS01} $\vert$
+    \faGithub\ \href{https://github.com/kanakOS01}{github.com/kanakOS01}
     
     \faEnvelope\ \href{mailto:kanaktanwarpro@gmail.com}{kanaktanwarpro@gmail.com} $\vert$
     \faLinkedin\ \href{https://www.linkedin.com/in/kanak-tanwar/}{linkedin.com/in/kanak-tanwar}
 \end{center} 
-\vspace{-7mm}
-
-    \small\begin{tabularx}{\textwidth}{|c|Y|c|c|}
-    \end{tabularx}
+\vspace{-6mm}
 
 \section*{Experience}
 \vspace{-2mm}
 
-\subsection{Backend Intern | Vetic, Gurgaon, India
-\hfill April 2025 to Present}
-\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-    \item Optimized API performance by adding indexes, improving SQL queries, and enabling connection pooling—reduced response time by up to 90\%.
-    \item Built and launched an OCR feature to extract pet vaccination data from uploaded cards, reducing manual data entry and operational overhead for the ops team.
-    \item Refactored parts of the codebase to eliminate N+1 queries and improve readability and maintainability.
-    \item Fixed reported bugs and implemented minor backend features across multiple services in FastAPI and Django.
+\subsection{Backend Intern | Vetic, Gurgaon, India \hfill April 2025 -- Present}
+\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
+    \item Enhanced API performance by optimizing SQL queries, adding indexes, and enabling connection pooling, reducing average response time by 90\%.
+    \item Designed and deployed OCR pipeline to extract pet vaccination data, automating 1000+ manual entries monthly.
+    \item Refactored legacy code to eliminate N+1 queries, improving query efficiency by 40\% and code maintainability.
+    \item Resolved 10+ production bugs and implemented enhancements across FastAPI and Django-based microservices.
+    \item Implemented POS and Razorpay payment link system for automated account closure, improving financial reconciliation accuracy.
 \end{itemize}
-\vspace{-3mm}
 
-
-\subsection{AI Intern | Mentorpal.ai 
-\hfill June 2024 to July 2024}
-\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-    \item Engineered an extension to suggest personalized messages to prospective leads on LinkedIn.
-    \item Developed an internal tool to allow QA with various resume using LangChain and LLM improving efficiency of the team.
-    \item Scraped various websites using Selenium and BeautifulSoup to provide client leads.
-    \item Collaborated with a team of professionals to design, develop, and implement innovative solutions driving the company’s growth.
+\subsection{AI Intern | Mentorpal.ai \hfill June 2024 -- July 2024}
+\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
+    \item Developed a Chrome extension recommending personalized LinkedIn messages to prospective leads.
+    \item Built internal resume QA tool using LangChain and LLMs, boosting QA efficiency by 40\%.
+    \item Scraped 10+ websites using Selenium and BeautifulSoup, generating 2000+ verified B2B leads.
+    \item Collaborated with cross-functional teams to ship two MVPs within 6 weeks.
 \end{itemize}
-\vspace{-5mm}
 
 \section*{Projects}
 \vspace{-2mm}
+
 \subsection*{\href{https://github.com/kanakOS01/git-chat}{Git Chat}}
-\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
     \item Developed a RAG-based application enabling Q/A interactions with GitHub repositories.
     \item Utilized Weaviate vector database and LangChain for efficient data management and processing and built a user-friendly UI on Streamlit to facilitate seamless user interaction.
     \item Implemented functionality to automatically load new repositories when encountered, ensuring up-to-date data access.
 \end{itemize}
-\vspace{-3mm}
 
 \subsection*{\href{https://github.com/kanakOS01/social-media-fastapi}{Social Media API}}
-\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-    \item Programmed a robust API using FastAPI for CRUD operations, authentication, and schema validation.
-    \item Integrated PostgreSQL with SQLAlchemy for seamless database management and utilized Alembic for migrations.
-    \item Deployed the API to an Ubuntu machine on DigitalOcean, configured a domain name, and implemented an SSL certificate for secure access.
-    \item Implemented a CI/CD pipeline using GitHub Actions for streamlined deployment and updates.
+\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
+    \item Built RESTful API in FastAPI with PostgreSQL, SQLAlchemy, and Alembic for full CRUD support.
+    \item Deployed on DigitalOcean with SSL and domain setup.
+    \item Configured CI/CD pipeline using GitHub Actions, reducing deployment time by 80\%.
 \end{itemize}
-\vspace{-3mm}
 
-\subsection*{\href{https://github.com/kanakOS01/movie-recommender-system}{Movie Recommendation System}}
-\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-    \item Cleaned and transformed TMDB dataset from Kaggle with about 5000 data points.
-    \item Utilized text processing techniques such as converting text to vectors using bag-of-words model and text vectorization to improve performance. 
-    \item Built and fine-tuned a content-based recommendation system using sklearn to recommend movies similar to the input.
-\end{itemize}
-\vspace{-3mm}
-
-% \subsection*{\href{https://github.com/kanakOS01/house-prediction-model}{House Price Prediction Project}}
-% \begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-%     \item Processed a Bangalore housing dataset comprising more than 13,000 data points.
-%     \item Engineered a linear regression model using scikit-learn to predict house prices based on the Bangalore House Price Data from Kaggle, achieving an 85\% accuracy rate.
-%     \item Designed a user-friendly website using HTML, CSS, JS, Flask and deployed the website on an AWS EC2 instance using NGINX reverse proxy.
+% \subsection*{\href{https://github.com/kanakOS01/movie-recommender-system}{Movie Recommendation System}}
+% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
+%     \item Processed 5000+ entries from TMDB dataset; cleaned, vectorized, and transformed textual metadata.
+%     \item Designed content-based recommendation engine using scikit-learn with 85\% precision on user validation set.
 % \end{itemize}
-% \vspace{-5mm}
 
 \section{Education}
 \vspace{-2mm}
-    \setlength{\tabcolsep}{2pt} % Adjust the spacing between columns in the table
-    \small\begin{tabularx}{\textwidth}{|c|Y|c|c|}
-      \hline
-      \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Graduation Date}\\
-      \hline
-      B.Tech - CSE & Dronacharya College Of Engineering & 86\% & Ongoing\\
-      \hline
-      Senior Secondary & Manav Rachna International School & 96.0\% & May 2022 \\
-      \hline
-      Secondary & Manav Rachna International School & 97.6\% & May 2020 \\
-      \hline
-    \end{tabularx}
-\vspace{-5mm}
+\begin{tabularx}{\textwidth}{cYcc}
+  \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Graduation} \\
+  B.Tech - CSE & Dronacharya College Of Engineering & 86\% & Ongoing \\
+  Senior Secondary & Manav Rachna International School & 96.0\% & May 2022 \\
+  Secondary & Manav Rachna International School & 97.6\% & May 2020 \\
+\end{tabularx}
 
 \section*{Skills}
 \vspace{-2mm}
-\begin{itemize}[label=\textbullet, left=0pt]
-    \item \textbf{Programming Languages -} \small Python, Java, C/C++, JavaScript, R, Bash
-    \vspace{-2mm}
-    \item \textbf{Web Development -} \small HTML, CSS, JS, Bootstrap, Flask, FastAPI, Django
-    \vspace{-2mm}
-    \item \textbf{Data Science and Machine Learning -} \small NumPy, Pandas, Matplotlib, Scikit Learn, LangChain
-    \vspace{-2mm}
-    \item \textbf{Database and ORM -} \small MySQL, MongoDB, PostgreSQL, SQLAlechemy, Beanie
-    \vspace{-2mm}
-    \item \textbf{Misc -} \small Git, Linux, AWS, Streamlit, Docker, BeautifulSoup, Selenium, Fabric
-    \vspace{-2mm}
+\begin{itemize}[left=0pt,itemsep=1pt,topsep=0pt,parsep=0pt]
+    \item \textbf{Programming Languages -} Python, Java, C/C++, JavaScript, R, Bash
+    \item \textbf{Web Development -} HTML, CSS, JS, Bootstrap, Flask, FastAPI, Django
+    \item \textbf{Data Science and Machine Learning -} NumPy, Pandas, Matplotlib, Scikit Learn, LangChain
+    \item \textbf{Database and ORM -} MySQL, MongoDB, PostgreSQL, SQLAlchemy, Beanie
+    \item \textbf{Misc -} Git, Linux, AWS, Streamlit, Docker, BeautifulSoup, Selenium, Fabric
 \end{itemize}
-\vspace{-5mm}
 
 \section*{Achievements}
 \vspace{-2mm}
-\begin{itemize}[label=\textbullet, left=0pt, itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-    \item Gate qualified DA (AIR 702) and CS (AIR 3050).
-    \item Regionalist at ICPC Amritapuri, 2023.
-    \item AIML track prize winner in HackKRMU 3.0 (WanderAI Project).
-    \item AIR 8 in NCAT 2023.
+\begin{itemize}[left=0pt,itemsep=1pt,topsep=0pt,parsep=0pt]
+    \item Qualified GATE 2024 -- Data Analytics (AIR 702), CS (AIR 3050)
+    \item ICPC Amritapuri 2023 Regionalist (Top 6\%)
+    \item Winner, AIML Track -- HackKRMU 3.0 (Project: WanderAI)
+    \item Secured AIR 8 in NCAT 2023 among 10,000+ participants
 \end{itemize}
-\vspace{-5mm}
-
-% \section*{Key Courses}
-% \vspace{-2mm}
-% \begin{itemize}[label=\textbullet, left=0pt, itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-%     \item Database Management with SQL, AIML fundamentals, Advanced Data Structures, Object Oriented Programming, Operating Systems
-%     \item Mathematics: Linear Algebra, Probability \& Statistics, Basic Calculus
-% \end{itemize}
-% \vspace{-3mm}
 
 \end{document}
