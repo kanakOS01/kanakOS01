@@ -15,6 +15,12 @@
 \usepackage[most]{tcolorbox}
 \usepackage{setspace}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 
@@ -65,7 +71,7 @@
 \section*{Projects}
 \vspace{-2mm}
 
-\subsection*{\href{https://github.com/kanakOS01/gitchat}{Git Chat}}
+\subsection*{Git Chat \hfill \href{https://github.com/kanakOS01/gitchat}{\underline{\textnormal{GitHub}}}}
 \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
     \item Built a RAG-based application that enables conversational Q/A with public GitHub repositories using LLMs.
     \item Designed and implemented a multi-model backend with FastAPI, integrating MongoDB for metadata storage, Weaviate for semantic search, and LangChain for retrieval-augmented generation.
@@ -73,7 +79,7 @@
 \end{itemize}
 \vspace{-4mm}
 
-\subsection*{\href{https://github.com/kanakOS01/social-media-fastapi}{Social Media API}}
+\subsection*{Social Media API \hfill \href{https://github.com/kanakOS01/social-media-fastapi}{\underline{\textnormal{GitHub}}}}
 \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
     \item Built RESTful API in FastAPI with PostgreSQL, SQLAlchemy, and Alembic for full CRUD support.
     \item Deployed on DigitalOcean with SSL and domain setup.
