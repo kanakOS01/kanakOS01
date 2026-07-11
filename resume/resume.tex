@@ -49,23 +49,10 @@
 \section*{Experience}
 \vspace{-2mm}
 
-% \subsection{Backend Intern | Vetic, Gurgaon, India \hfill April 2025 -- Present}
-% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-%     \item Built a \textbf{config-driven DSL rule engine} for appointment exemptions, using declarative rule files supporting multiple operators to enforce outcomes, reducing revenue leakage to \textbf{0\%} while enabling non-code rule updates.
-%     \item Architected an automated \textbf{clinic day-closing and revenue reconciliation system}, replacing manual workflows and reducing processing time from \textbf{2 hours to 5 minutes} while enabling systematic detection of revenue leakages.
-%     \item Scaled \textbf{payment processing pipelines} by integrating POS systems and Razorpay payment links, handling \textbf{80K+ monthly transactions}, improving payment adherence from \textbf{90\% to 99.7\%} and reducing billing mismatches by \textbf{40\%}.
-%     \item Designed a \textbf{centralized cash management ledger service} for multi-clinic operations, ensuring consistent tracking of daily cash flows and reducing reconciliation discrepancies across locations.
-%     \item Engineered and rolled out \textbf{centralized authentication} through a shared \texttt{pyvetic} module, abstracting internal and customer authentication behind dedicated interfaces; migrated auth across \textbf{15+ microservices}, eliminating duplicated implementations and simplifying access-control management.
-%     \item Developed an \textbf{LLM-assisted OCR pipeline} for extracting structured data from pet vaccination records, reducing manual data entry effort by \textbf{85\%} and improving data accuracy.
-%     \item Used \textbf{Redis-based distributed locking}, \textbf{MongoDB transactions}, and \textbf{rate limiting} to ensure correctness and reliability under concurrent workloads.
-%     \item Implemented \textbf{multi-layer caching (local + Redis)} and \textbf{asynchronous processing (RabbitMQ, Cron jobs)}, reducing API latency by \textbf{50\%} and improving backend scalability.
-% \end{itemize}
-% \vspace{-5mm}
-
 \subsection{Software Development Engineer I | Vetic, Gurgaon, India \hfill July 2026 -- Present}
 \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-    \item Developing and maintaining \texttt{pyvetic}, a shared \textbf{backend platform library} providing authentication, database, queueing, observability, and common infrastructure abstractions used across Vetic's repositories.
-    \item Engineered and migrated \textbf{centralized authentication} via \texttt{pyvetic} across \textbf{15+ repositories}, standardizing access control and removing duplicated code.
+    \item Developing and maintaining \texttt{pyvetic}, a shared \textbf{backend platform library} providing authentication, database, queuing, observability, and common infrastructure for Vetic's backend applications.
+    \item Engineered \textbf{centralized authentication} in \texttt{pyvetic} and migrated \textbf{15+ backend services} to it, standardizing access control and eliminating duplicated implementations.
 \end{itemize}
 \vspace{-5mm}
 
@@ -73,7 +60,7 @@
 \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
     \item Built a \textbf{config-driven DSL rule engine} for appointment exemptions, using declarative rule files supporting multiple operators to enforce outcomes, reducing revenue leakage to \textbf{0\%} while enabling non-code rule updates.
     \item Architected an automated \textbf{clinic day-closing and revenue reconciliation system}, replacing manual workflows and reducing processing time from \textbf{2 hours to 5 minutes} while enabling systematic detection of revenue leakages.
-    \item Scaled \textbf{payment processing pipelines} by integrating Pinelabs and Razorpay, handling \textbf{80K+ monthly transactions}, improving payment adherence from \textbf{90\% to 99.7\%} and reducing billing mismatches by \textbf{40\%}.
+    \item Scaled \textbf{payment processing pipelines} by integrating Pine Labs and Razorpay, handling \textbf{80K+ monthly transactions}, improving payment adherence from \textbf{90\% to 99.7\%} and reducing billing mismatches by \textbf{40\%}.
     \item Designed a \textbf{centralized cash management ledger service} for multi-clinic operations, ensuring consistent tracking of daily cash flows and reducing reconciliation discrepancies across locations.
     \item Developed an \textbf{LLM-assisted OCR pipeline} for extracting structured data from pet vaccination records, reducing manual data entry effort by \textbf{85\%} and improving data accuracy.
     \item Implemented \textbf{Redis-based distributed locking}, \textbf{MongoDB transactions}, \textbf{rate limiting}, \textbf{multi-layer caching (local + Redis)}, and \textbf{asynchronous processing (RabbitMQ, Cron jobs)} to improve backend reliability, correctness under concurrent workloads, and API performance.
@@ -82,7 +69,7 @@
 
 \subsection{AI Intern | Mentorpal.ai \hfill June 2024 -- July 2024}
 \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-    \item Developed a Chrome extension recommending personalized LinkedIn messages to prospective leads.
+    \item Developed a Chrome extension generating personalized LinkedIn outreach messages using LLMs.
     \item Built internal resume QA tool using LangChain and LLMs, boosting QA efficiency by 40\%.
 \end{itemize}
 \vspace{-7mm}
@@ -93,7 +80,7 @@
 \subsection*{Pair Programmer (pp) \hfill \href{https://github.com/kanakOS01/pair-programmer}{\underline{\textnormal{GitHub}}}}
 \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
     \item Built an \textbf{agentic CLI coding assistant} with a rich TUI, enabling interactive codebase exploration, reasoning, and autonomous code modification using LLMs.
-    \item Designed a \textbf{tool-augmented architecture} with support for \textbf{subagents}, \textbf{MCP servers}, and built in tools for structured multi-step development workflows.
+    \item Designed a \textbf{tool-augmented agent architecture} supporting \textbf{subagents}, \textbf{MCP servers}, and extensible tool integrations for structured multi-step coding workflows.
     \item Implemented \textbf{persistent sessions}, \textbf{hooks}, and a \textbf{provider-agnostic LLM interface} with streaming responses and dynamic model selection, enabling extensibility and long-running interactive coding sessions.
 \end{itemize}
 \vspace{-5mm}
@@ -105,34 +92,21 @@
 \end{itemize}
 \vspace{-5mm}
 
-% \subsection*{Social Media API \hfill \href{https://github.com/kanakOS01/social-media-fastapi}{\underline{\textnormal{GitHub}}}}
-% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-%     \item Built RESTful API in FastAPI with PostgreSQL, SQLAlchemy, and Alembic for full CRUD support.
-%     \item Deployed on DigitalOcean with SSL and domain setup and configured CI/CD using Github Actions.
-% \end{itemize}
-% \vspace{-5mm}
-
-% \subsection*{\href{https://github.com/kanakOS01/movie-recommender-system}{Movie Recommendation System}}
-% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-%     \item Processed 5000+ entries from TMDB dataset; cleaned, vectorized, and transformed textual metadata.
-%     \item Designed content-based recommendation engine using scikit-learn with 85\% precision on user validation set.
-% \end{itemize}
-
 \section*{Skills}
 \vspace{-2mm}
 \begin{itemize}[left=0pt,itemsep=1pt,topsep=0pt,parsep=0pt]
     \item \textbf{Languages \& Frameworks -} Python, Go, FastAPI, Django, Flask, Gin
-    \item \textbf{Databases \& ORM -} PostgreSQL, MySQL, MongoDB, Redis, SQLAlchemy, Beanie, Alembic, Golang-migrate
-    \item \textbf{DevOps \& Tools -} Git, Linux, Docker, AWS, Grafana, Loki, Prometheus
-    \item \textbf{Misc -} REST APIs, RabbitMQ, Cron Jobs
+    \item \textbf{Databases -} PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch
+    \item \textbf{Infrastructure \& DevOps -} Docker, AWS, Linux, Git, Grafana, Loki, Prometheus
+    \item \textbf{Misc -} REST APIs, RabbitMQ, LLMs, RAG, MCP, Agentic AI
 \end{itemize}
-\vspace{-7mm}
+\vspace{-6mm}
 
 \section{Education}
 \vspace{-2mm}
 \begin{tabularx}{\textwidth}{cYcc}
   \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Graduation} \\
-  B.Tech - CSE & Dronacharya College Of Engineering & 86\% & Ongoing \\
+  B.Tech - CSE & Dronacharya College Of Engineering & 9 CGPA & June 2026 \\
   Senior Secondary & Manav Rachna International School & 96.0\% & May 2022 \\
   Secondary & Manav Rachna International School & 97.6\% & May 2020 \\
 \end{tabularx}
