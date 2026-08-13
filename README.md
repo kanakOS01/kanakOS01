@@ -20,4 +20,4 @@ i'm a software engineer at **[vetic](https://vetic.in)**. most of my time goes i
 i like working close to the machine: backends, infrastructure, and ai. things that are simple to reason about and hard to break.
 
 - currently into ai, backend systems, infra and cli/tui apps
-- outside of code — sports, anime, manga
+- outside of code - sports, anime, manga
