@@ -17,7 +17,13 @@
 
 i'm a software engineer at **[vetic](https://vetic.in)**. most of my time goes into building backends - the systems behind our internal tools and consumer-facing products. on the side, i work on making our developer experience more ai-native, bringing ai into the everyday workflow instead of leaving it as a separate tool.
 
+i also try to take out time to build things that seem cool/fun/something i would use myself.
+
 i like working close to the machine: backends, infrastructure, and ai. things that are simple to reason about and hard to break.
 
 - currently into ai, backend systems, infra and cli/tui apps
 - outside of code - sports, anime, manga
+
+## ongoing work
+
+- [gravitype](https://github.com/kanakOS01/gravitype) — a terminal typing game where words fall down the screen and you type them before they reach the bottom.
