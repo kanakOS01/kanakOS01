@@ -15,7 +15,7 @@
 
 ## about me
 
-i'm a software engineer at **[vetic](https://vetic.in)**. most of my time goes into building backends — the systems behind our internal tools and consumer-facing products. on the side, i work on making our developer experience more ai-native, bringing ai into the everyday workflow instead of leaving it as a separate tool.
+i'm a software engineer at **[vetic](https://vetic.in)**. most of my time goes into building backends - the systems behind our internal tools and consumer-facing products. on the side, i work on making our developer experience more ai-native, bringing ai into the everyday workflow instead of leaving it as a separate tool.
 
 i like working close to the machine: backends, infrastructure, and ai. things that are simple to reason about and hard to break.
 
