@@ -26,4 +26,4 @@ i like working close to the machine: backends, infrastructure, and ai. things th
 
 ## ongoing work
 
-- [gravitype](https://github.com/kanakOS01/gravitype) — a terminal typing game where words fall down the screen and you type them before they reach the bottom.
+- [gravitype](https://github.com/kanakOS01/gravitype) - a terminal typing game where words fall from the sky
