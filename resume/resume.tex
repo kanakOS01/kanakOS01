@@ -1,19 +1,11 @@
 \documentclass[a4paper,11pt]{article}
-\usepackage[left=0.3in,right=0.3in,top=0.2in,bottom=0.2in]{geometry}
+\usepackage[left=0.3in,right=0.3in,top=0.3in,bottom=0.3in]{geometry}
 \usepackage{fontawesome}
 \usepackage{enumitem}
-\usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
-\usepackage{fancyhdr}
-\usepackage{multicol}
 \usepackage{cfr-lm}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{ragged2e}
-\usepackage[most]{tcolorbox}
-\usepackage{setspace}
 
 \hypersetup{
     colorlinks=true,
@@ -21,18 +13,18 @@
     urlcolor=blue
 }
 
-\newcolumntype{Y}{>{\centering\arraybackslash}X}
-\renewcommand\tabularxcolumn[1]{m{#1}}
-
 \titleformat{\section}
 {\large\bfseries}{}{0em}{}[\titlerule]
 \titleformat{\subsection}
 {\normalfont\bfseries}{}{0em}{}[\vspace{-0.4em}]
 
+\setlist[itemize]{left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt}
+
 \begin{document}
 \pagestyle{empty}
 
-\vspace{-16mm}
+\vspace*{\fill}
+\vspace{-10mm}
 \begin{center}
     {\Huge\scshape Kanak Tanwar}
 
@@ -40,120 +32,98 @@
     \faGlobe\ \href{https://kanaktanwar.tech}{kanaktanwar.tech} $\vert$
     \faGithub\ \href{https://github.com/kanakOS01}{github.com/kanakOS01}
     
-    \faPhone\ +91-8860310807 $\vert$
-    \faEnvelope\ \href{mailto:kanaktanwarpro@gmail.com}{kanaktanwarpro@gmail.com} $\vert$
-    \faLinkedin\ \href{https://www.linkedin.com/in/kanak-tanwar/}{linkedin.com/in/kanak-tanwar}
-\end{center} 
+    \faLinkedin\ \href{https://www.linkedin.com/in/kanak-tanwar/}{linkedin.com/in/kanak-tanwar} $\vert$
+    % \faPhone\ +91-8860310807 $\vert$
+    \faEnvelope\ \href{mailto:kanaktanwarpro@gmail.com}{kanaktanwarpro@gmail.com}
+\end{center}
 \vspace{-8mm}
 
-\section{Education}
-\vspace{-2mm}
-\begin{tabularx}{\textwidth}{cYcc}
-  \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Graduation} \\
-  B.Tech - CSE & Dronacharya College Of Engineering & 9 CGPA & June 2026 \\
-  Senior Secondary & Manav Rachna International School & 96.0\% & May 2022 \\
-  Secondary & Manav Rachna International School & 97.6\% & May 2020 \\
-\end{tabularx}
-\vspace{-7mm}
+%---------------- SUMMARY ----------------
+\section*{Summary}
+\vspace{-1mm}
+\noindent Backend engineer with 1.5+ years building production systems in Python across payments, authentication,
+and platform infrastructure, alongside applied AI work with LLMs, RAG, and agentic tooling. Strong problem solver
+with high agency, comfortable owning problems end to end, and a quick learner across new domains and stacks.
+\vspace{-4mm}
 
+%---------------- EXPERIENCE ----------------
 \section*{Experience}
 \vspace{-2mm}
 
-% \subsection{Software Development Engineer I | Vetic, Gurgaon, India \hfill June 2026 -- Present}
-% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-%     \item Developing and maintaining \texttt{pyvetic}, a shared \textbf{backend platform library} providing authentication, database, queuing, observability, and common infrastructure for Vetic's backend applications.
-%     \item Engineered \textbf{centralized authentication} in \texttt{pyvetic} and migrated \textbf{15+ backend services} to it, standardizing access control and eliminating duplicated implementations.
-% \end{itemize}
-% \vspace{-5mm}
+\subsection*{Vetic \hfill \textnormal{Gurgaon, India}}
+\noindent\textbf{Software Development Engineer I} \hfill June 2026 -- Present\\
+\noindent\textbf{Software Development Intern} \hfill April 2025 -- June 2026
 
-% \subsection{Software Development Engineer I | Vetic, Gurgaon, India \hfill June 2026 -- Present}
-% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-% \item Developing and maintaining \texttt{pyvetic}, a shared \textbf{backend platform library} providing authentication, database, queuing, observability, and common infrastructure for Vetic's backend applications.
-% \item Engineered \textbf{centralized authentication} in \texttt{pyvetic} and migrated \textbf{15+ backend services}, standardizing access control and eliminating duplicated authentication implementations.
-% \item Strengthening backend infrastructure security through \textbf{private object storage, VPC isolation, and controlled service-to-service access}, while building internal developer tooling and modernizing legacy codebases for AI-assisted development.
-% % \item Optimized \textbf{production release workflows} by improving container image storage and reuse, reducing release time from \textbf{20s to 12s (40% faster)}.
-% \end{itemize}
-% \vspace{-5mm}
+\begin{itemize}
+    \item Scaled multi-vendor payment processing across Razorpay, PayU and Pine Labs, handling \textbf{80K+ monthly transactions} and improving payment adherence from \textbf{90\% to 99.7\%}.
 
-% \subsection{Software Development Intern | Vetic, Gurgaon, India \hfill April 2025 -- June 2026}
-% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-%     \item Built a \textbf{config-driven DSL rule engine} for appointment exemptions, using declarative rule files supporting multiple operators to enforce outcomes, reducing revenue leakage to \textbf{0\%} while enabling non-code rule updates.
-%     \item Architected an automated \textbf{clinic day-closing and revenue reconciliation system}, replacing manual workflows and reducing processing time from \textbf{2 hours to 5 minutes} while enabling systematic detection of revenue leakages.
-%     \item Scaled \textbf{payment processing pipelines} by integrating Pine Labs and Razorpay, handling \textbf{80K+ monthly transactions}, improving payment adherence from \textbf{90\% to 99.7\%} and reducing billing mismatches by \textbf{40\%}.
-%     \item Designed a \textbf{centralized cash management ledger service} for multi-clinic operations, ensuring consistent tracking of daily cash flows and reducing reconciliation discrepancies across locations.
-%     \item Developed an \textbf{LLM-assisted OCR pipeline} for extracting structured data from pet vaccination records, reducing manual data entry effort by \textbf{85\%} and improving data accuracy.
-%     \item Implemented \textbf{Redis-based distributed locking}, \textbf{MongoDB transactions}, \textbf{rate limiting}, \textbf{multi-layer caching (local + Redis)}, and \textbf{asynchronous processing (RabbitMQ, Cron jobs)} to improve backend reliability, correctness under concurrent workloads, and API performance.
-% \end{itemize}
-% \vspace{-5mm}
+    \item Automated the reconciliation and cash-closing system, cutting daily clinic closing time from \textbf{2 hours to 5 minutes}.
 
-\subsection{Software Development Engineer I | Vetic, Gurgaon, India \hfill June 2026 -- Present}
-% \begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-%     \item Developing and maintaining \texttt{pyvetic}, a shared \textbf{backend platform library} providing authentication, database, queuing, observability, and common infrastructure for Vetic's backend applications.
-%     \item Engineered \textbf{centralized authentication} in \texttt{pyvetic} and migrated \textbf{15+ backend services}, standardizing access control and eliminating duplicated authentication implementations.
-%     \item Strengthening backend infrastructure security through \textbf{private object storage, VPC isolation, and controlled service-to-service access}, while modernizing legacy codebases and building internal developer tooling.
-%     \item Reduced \textbf{production release time} from \textbf{20s to 12s (40\% faster)} by pre-building the \texttt{pyvetic} wheel, eliminating its runtime build overhead.
-% \end{itemize}
-\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-\item Engineered \textbf{centralized authentication} in \texttt{pyvetic} and migrated \textbf{15+ backend services}, standardizing access control and eliminating duplicated authentication implementations.
-\item Defined \textbf{standardized backend architecture and coding practices} for a large-scale refactor, establishing a phased approach to \textbf{migration, testing, and iterative releases} across codebases.
-\item Strengthened backend infrastructure security by implementing \textbf{private object storage and VPC isolation} across backend systems.
-\item Reduced \textbf{production release time} from \textbf{20s to 12s (40\% faster)} by pre-building the \texttt{pyvetic} wheel, eliminating its runtime build overhead.
-\end{itemize}
+    \item Built a DSL-based rules engine with configurable appointment exemptions, reducing revenue leakage to \textbf{near 0\%}.
 
-\vspace{-5mm}
+    \item Centralized authentication across \textbf{15+ services} through \textbf{pyvetic}, a shared Python backend library.
 
-\subsection{Software Development Intern | Vetic, Gurgaon, India \hfill April 2025 -- June 2026}
-\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-    \item Scaled \textbf{payment processing pipelines} by integrating Pine Labs and Razorpay, handling \textbf{80K+ monthly transactions}, improving payment adherence from \textbf{90\% to 99.7\%} and reducing billing mismatches by \textbf{40\%}.
-    \item Architected an automated \textbf{clinic day-closing and revenue reconciliation system}, reducing processing time from \textbf{2 hours to 5 minutes} while enabling systematic detection of revenue leakages.
-    \item Built a \textbf{config-driven DSL rule engine} for appointment exemptions, using declarative rule files with multiple operators to enforce outcomes, reducing revenue leakage to \textbf{0\%} while enabling non-code rule updates.
-    \item Implemented \textbf{Redis-based distributed locking}, \textbf{MongoDB transactions}, \textbf{rate limiting}, \textbf{multi-layer caching}, and \textbf{asynchronous processing} with RabbitMQ and Cron jobs to improve backend reliability and correctness under concurrent workloads.
+    \item Enhanced app booking workflows for membership and add-on sales with dynamic coupon application, supporting \textbf{7\% membership} and \textbf{33\% add-on} attach rates.
+
+    \item Hardened security across the \textbf{entire Vetic platform} via API gateway, secrets removal, private storage, and authenticated access controls.
+
+    \item Improved backend reliability with distributed locking, DB transactions, connection pooling, caching, and async database clients.
+
+    \item Defined backend architecture and coding standards for a large-scale refactor, including phased migration, testing, and release practices; introduced AI-assisted development workflows.
 \end{itemize}
 \vspace{-5mm}
 
-\subsection{AI Intern | Mentorpal.ai \hfill June 2024 -- July 2024}
-\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
+\subsection*{Mentorpal AI \hfill \textnormal{Remote, India}}
+\noindent\textbf{AI Intern} \hfill June 2024 -- July 2024
+\begin{itemize}
     \item Developed a Chrome extension generating personalized LinkedIn outreach messages using LLMs.
-    \item Built internal resume QA tool using LangChain and LLMs, boosting QA efficiency by 40\%.
+    \item Built an internal resume QA tool using LangChain and LLMs, improving QA efficiency by \textbf{40\%}.
 \end{itemize}
 \vspace{-5mm}
 
+%---------------- PROJECTS ----------------
 \section*{Projects}
 \vspace{-2mm}
 
-\subsection*{Pair Programmer (pp) \hfill \href{https://github.com/kanakOS01/pair-programmer}{\underline{\textnormal{GitHub}}}}
-\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-    \item Built an \textbf{agentic CLI coding assistant} with a rich TUI, enabling interactive codebase exploration, reasoning, and autonomous code modification using LLMs.
-    \item Designed a \textbf{tool-augmented agent architecture} supporting \textbf{subagents}, \textbf{MCP servers}, and extensible tool integrations for structured multi-step coding workflows.
-    \item Implemented \textbf{persistent sessions}, \textbf{hooks}, and a \textbf{provider-agnostic LLM interface} with streaming responses and dynamic model selection, enabling extensibility and long-running interactive coding sessions.
+\subsection*{Pair Programmer (pp) \textnormal{\small | Python, OpenRouter, MCP} \hfill \href{https://github.com/kanakOS01/pair-programmer}{\underline{\textnormal{GitHub}}}}
+\begin{itemize}
+    \item Built an agentic CLI coding assistant with a rich TUI for codebase exploration, reasoning, and autonomous code modification, using a tool-augmented architecture with subagents and MCP server support.
+    \item Implemented persistent sessions, hooks, and a provider-agnostic LLM layer via OpenRouter.
 \end{itemize}
 \vspace{-5mm}
 
-\subsection*{Git Chat \hfill \href{https://github.com/kanakOS01/gitchat}{\underline{\textnormal{GitHub}}}}
-\begin{itemize}[left=1pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-    \item Engineered a \textbf{RAG-based system} enabling conversational question answering over public GitHub repositories using LLMs.
-    \item Designed a \textbf{multi-model backend architecture} with FastAPI, integrating \textbf{Weaviate (vector search)}, \textbf{MongoDB (metadata)}, and \textbf{LangChain (retrieval orchestration)}.
+\subsection*{Git Chat \textnormal{\small | FastAPI, Weaviate, MongoDB, LangChain} \hfill \href{https://github.com/kanakOS01/gitchat}{\underline{\textnormal{GitHub}}}}
+\begin{itemize}
+    \item Engineered a RAG system for conversational Q\&A over public GitHub repositories using LLMs.
+    \item Designed a FastAPI backend with Weaviate (vector search), MongoDB (metadata), and LangChain (retrieval).
 \end{itemize}
-\vspace{-6mm}
+\vspace{-5mm}
 
-\section*{Achievements}
-\vspace{-2mm}
-\begin{itemize}[left=0pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-    \item \textbf{ICPC} Asia West Amritapuri 2023 Regionalist
-    \item LeetCode: \textbf{1968} (Knight), CodeChef: \textbf{1684} (3$\star$)
-    \item Global Rank \textbf{159} in CodeChef Starters 155
-    \item Qualified GATE 2025 — DA (AIR 702), CS (AIR 3050)
-\end{itemize}
-\vspace{-6mm}
-
+%---------------- SKILLS ----------------
 \section*{Skills}
 \vspace{-2mm}
-\begin{itemize}[left=0pt,itemsep=1pt,topsep=0pt,parsep=0pt]
-    \item \textbf{Languages \& Frameworks -} Python, Go, C++, FastAPI, Django, Flask, Gin
-    \item \textbf{Databases -} PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch
-    \item \textbf{Infrastructure \& DevOps -} Docker, AWS, Linux, Git, Grafana, Loki, Prometheus, RabbitMQ
-    \item \textbf{Misc -} REST APIs, LLMs, RAG, MCP, Agentic AI
+\begin{itemize}[left=0pt]
+    \item \textbf{Languages \& Frameworks:} Python, Go, C++, FastAPI, Django, Flask, Gin
+    \item \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch
+    \item \textbf{Infrastructure:} Docker, AWS, Linux, Git, RabbitMQ, Grafana, Loki, Prometheus
+    \item \textbf{AI:} LLMs, RAG, MCP, Agentic systems
 \end{itemize}
-\vspace{-7mm}
+\vspace{-5mm}
 
+%---------------- ACHIEVEMENTS ----------------
+\section*{Achievements}
+\vspace{-2mm}
+\begin{itemize}[left=0pt]
+    \item \textbf{ICPC} Asia West Amritapuri 2023 Regionalist
+    \item LeetCode \textbf{1968} (Knight) $\vert$ CodeChef \textbf{1684} (3$\star$), Global Rank \textbf{159} in Starters 155
+    \item \textbf{Winner}, Hack KRMU 3.0 (100+ teams)
+\end{itemize}
+\vspace{-5mm}
+
+%---------------- EDUCATION ----------------
+\section*{Education}
+\vspace{-2mm}
+\noindent\textbf{B.Tech, CSE}, Dronacharya College of Engineering \hfill 9.0 CGPA $\vert$ 2022 -- 2026
+
+\vspace*{\fill}
 \end{document}
