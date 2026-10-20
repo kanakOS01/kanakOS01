@@ -26,4 +26,6 @@ i like working close to the machine: backends, infrastructure, and ai. things th
 
 ## ongoing work
 
-- [gravitype](https://github.com/kanakOS01/gravitype) - a terminal typing game where words fall from the sky (LIVE NOW!!)
+- [jev-vs-gpt](https://github.com/kanakOS01/jev-vs-gpt) - a set of toy projects comparing jev and openai decisions model
+- [gravitype](https://github.com/kanakOS01/gravitype) **(LIVE NOW!!)** - a terminal typing game where words fall from the sky
+- [pair-programmer](https://github.com/kanakOS01/pair-programmer) - agentic cli based coding assistant to code directly from the terminal
